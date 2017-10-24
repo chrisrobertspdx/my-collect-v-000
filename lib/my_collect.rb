@@ -7,7 +7,7 @@ def my_collect(arr)
       collection << yield(arr[i])
       i += 1
     end
-    puts collection.inspect
+    #puts collection.inspect
     collection
   else
     puts "Nil"
