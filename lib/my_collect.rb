@@ -5,9 +5,10 @@ def my_collect(arr)
     while i < arr.size do
       collection << yield(arr[i])
       i += 1
-    end
+    end 
+    collection
   else
-    return Nil
+    Nil
   end
 end
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
