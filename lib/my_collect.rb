@@ -15,6 +15,6 @@ def my_collect(arr)
 end
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 
-puts my_collect(array) do |name|
+my_collect(array) do |name|
   name.split(" ").first
-end.inspect
+end
