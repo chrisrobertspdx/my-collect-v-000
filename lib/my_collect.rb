@@ -8,6 +8,7 @@ def my_collect(arr)
     end
     collection
   else
+    puts "Nil"
     NIL
   end
 end
