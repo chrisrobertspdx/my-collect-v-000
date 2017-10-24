@@ -1,4 +1,5 @@
 def my_collect(arr)
+  puts block_given?
   if block_given?
     collection = []
     i=0
