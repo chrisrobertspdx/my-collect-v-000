@@ -7,6 +7,7 @@ def my_collect(arr)
       collection << yield(arr[i])
       i += 1
     end
+    puts collection.inspect
     collection
   else
     puts "Nil"
@@ -15,6 +16,6 @@ def my_collect(arr)
 end
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 
-puts my_collect(array) do |name|
+my_collect(array) do |name|
   name.split(" ").first
 end
