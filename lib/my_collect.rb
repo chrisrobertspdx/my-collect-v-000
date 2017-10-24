@@ -5,8 +5,12 @@ def my_collect(arr)
     while i < arr.size
       collection << yield arr[i]
       i += 1
+    end
   else
     return Nil
   end
 end
-
+array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+puts my_collect(array) do |name|
+  name.split(" ").first.inspect
+end
